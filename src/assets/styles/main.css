@@ -1,0 +1,264 @@
+/* Base styles */
+
+.navbar-nav .nav-link {
+    margin-right: 1.5rem;
+}
+
+.search-input {
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding: 5px 0;
+    margin-right: 15px;
+    box-sizing: border-box;
+    background: rgba(253, 254, 255, 0.4);
+}
+
+.search-button {
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.login-button1, .signin-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.signin-button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.login-button1 {
+    background-color: #ffffff;
+}
+
+.login-button1:hover {
+    background-color: #f0f0f0;
+}
+
+.signin-button:hover {
+    background-color: #333533;
+}
+
+.login-button1 span, .signin-button span {
+    margin-right: 0.5rem;
+}
+
+.form-login {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+}
+
+.page-content {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+}
+
+/* New styles for username, subscription, and profile section */
+.form-subscription {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+}
+
+.user-button, .nav-subscription-button2 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    height: 40px;
+}
+.user-button{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.user-button:hover {
+    background-color: #f0f0f0;
+}
+.nav-subscription-button2{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.nav-subscription-button2:hover {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+.user-button span, .nav-subscription-button2 span {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+
+/* For small devices (tablets, phones) */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 15px;
+    }
+
+    .search-input {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    .login-button1, .signin-button, .user-button, .subscription-button {
+        padding: 5px 8px;
+        width: auto;
+        font-size: 14px;
+        margin-right: 8px;
+    }
+
+    .page-content {
+        padding-top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form-login, .form-subscription {
+        position: static;
+        justify-content: center;
+        padding: 5px;
+    }
+}
+
+/* For extra small devices (phones) */
+@media (max-width: 576px) {
+    .search-input {
+        width: 100px;
+        padding: 5px;
+        margin-right: 8px;
+    }
+
+    .login-button1, .signin-button, .user-button, .nav-subscription-button {
+        padding: 4px 6px;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .login-button1, .signin-button, .user-button, .nav-subscription-button {
+        width: 80px;
+        text-align: center;
+    }
+
+    .page-content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 992px) {
+    .search-input {
+        width: 250px;
+        margin-right: 20px;
+    }
+
+    .login-button1, .signin-button, .user-button, .nav-subscription-button {
+        padding: 10px 15px;
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .form-login, .form-subscription {
+        right: 0;
+        padding: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 2rem;
+    }
+}
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for vertical centering */
+}
+
+.spinner {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.semi-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    box-sizing: border-box;
+}
+
+.semi1 {
+    border-top-color: rgb(0, 140, 255);  /* First color */
+    animation: spin-left 1.5s linear infinite;
+}
+
+.semi2 {
+    border-right-color: rgb(219, 41, 41); /*Second color*/
+    background: linear-gradient(to top right, rgba(206, 174, 209, 0.6), transparent);
+    animation: spin-right 1.5s linear infinite;
+}
+
+.semi3 {
+    border-bottom-color: rgb(140, 255, 0); /* Third color */
+    animation: spin-left 1.5s linear infinite;
+}
+
+@keyframes spin-left {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-right {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}

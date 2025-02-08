@@ -1,0 +1,130 @@
+/* Team Section */
+.team-wrapper {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(3,5,255,0.6), rgb(255,243,235));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-top: 80px;
+  }
+  
+  /* Bubble Background */
+  .team-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 15%, transparent 15%) repeat;
+    background-size: 50px 50px;
+    z-index: 1;
+  }
+  
+  .team-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+  }
+  
+  /* Team Cards */
+  .team-card-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    z-index: 2;
+  }
+  
+  .team-card-image-wrapper {
+    overflow: hidden;
+        border-radius: 50%; /* Circle border */
+        width: 150px;
+        height: 150px;
+        margin: 0 auto; /* Center the image */
+        padding-top: 5px;
+  }
+  
+  .team-card-image {
+    width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        border-radius: 50%;
+  }
+  
+  .team-card-image-wrapper:hover .team-card-image {
+    transform: scale(1.1);
+  }
+  
+  .team-card-box .card-body {
+    text-align: center;
+  }
+  
+  .team-card-box .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .team-card-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .team-card-box .card-text {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Button Styling */
+  .team-action-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-top: 20px;
+    z-index: 2;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .team-action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .team-title {
+      font-size: 2rem;
+    }
+  
+    .team-card-box .card-title {
+      font-size: 1.2rem;
+    }
+  
+    .team-card-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .team-card-box .card-text {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .team-card-box {
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,0 +1,131 @@
+/* General styles for the pop-up */
+.popup-container {
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    border-radius: 20px;
+  }
+  
+  .popup-container.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .popup-title {
+    color: azure;
+    flex: 1;
+    font-size: 2rem; /* Responsive font size */
+    font-weight: bold; /* Add bold font weight for emphasis */
+    width: 60%;
+  }
+  
+  .close-btn {
+    font-size: 1.8rem; /* Adjusted font size for responsiveness */
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px; /* Adjusted padding */
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: #000000; /* Black background */
+    color: white; /* White text */
+    border: 1px solid #ddd;
+    max-width: 200px; /* Adjusted width for responsiveness */
+    height: 50px;
+    justify-content: center; /* Center button content */
+  }
+  .button:hover{
+    color: #000000;
+    background-color: white;
+  }
+  
+  .subscription-button {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .subscription-button:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Responsive styles */
+  
+  /* For tablets (portrait mode) */
+  @media (max-width: 768px) {
+    .popup-container {
+      left: 5%;
+      width: 90%;
+      height: 160px; /* Slightly increased height for larger devices */
+      padding: 0 15px;
+    }
+  
+    .popup-title {
+      font-size: 1.5rem; /* Adjusted font size for tablets */
+    }
+  
+    .close-btn {
+      font-size: 1.5rem;
+    }
+  
+    .button {
+      max-width: 180px; /* Adjusted button size */
+      height: 45px;
+    }
+  }
+  
+  /* For mobile devices (portrait mode) */
+  @media (max-width: 480px) {
+    .popup-container {
+      left: 2%;
+      width: 96%;
+      height: 140px; /* Decreased height for smaller screens */
+      padding: 0 10px;
+    }
+  
+    .popup-title {
+      font-size: 1.2rem; /* Adjusted font size for mobile */
+    }
+  
+    .close-btn {
+      font-size: 1.2rem;
+    }
+  
+    .button {
+      max-width: 150px; /* Reduced button width for mobile */
+      height: 40px; /* Reduced button height */
+      padding: 5px 10px; /* Adjusted padding */
+    }
+  }
+  

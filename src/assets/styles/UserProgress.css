@@ -1,0 +1,89 @@
+/* Container for the entire progress page */
+.user-progress-container {
+  padding: 20px;
+  background-color: #f4f7fc;
+  padding-top: 80px;
+}
+
+/* Header Section */
+.progress-header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.progress-header p {
+  font-size: 1.2rem;
+  color: #7a7a7a;
+}
+
+/* Styling for each progress card */
+.progress-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.progress-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.progress-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.progress-card h5 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+.progress-card p {
+  font-size: 1rem;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 20px; /* Adjust the height of the progress bar */
+  border-radius: 4px; /* Rounded corners for the progress bar */
+  background-color: #4caf50; /* Set a default color for the progress bar */
+  transition: width 0.3s ease-in-out; /* Smooth animation for progress changes */
+}
+
+.progress-bar::after {
+  content: attr(label); /* Display the label content */
+  position: absolute;
+  right: 0; /* Position the label at the right end */
+  top: 50%;
+  transform: translateY(-50%); /* Center the label vertically */
+  color: white; /* Adjust color as needed */
+  font-size: 0.9rem; /* Adjust font size if necessary */
+}
+
+/* Make sure it's responsive */
+@media (max-width: 768px) {
+  .progress-header h1 {
+    font-size: 2rem;
+  }
+
+  .progress-header p {
+    font-size: 1rem;
+  }
+
+  .progress-card {
+    text-align: left;
+  }
+
+  .progress-card h5 {
+    font-size: 1.3rem;
+  }
+
+  .progress-bar {
+    height: 1rem;
+  }
+}

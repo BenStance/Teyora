@@ -1,0 +1,166 @@
+.Getstart-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('../images/get-image.webp'); /* Corrected the path */
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1), rgba(101, 0, 234, 0.5) 100%);
+  width: 100%;
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:linear-gradient(to top, rgba(255,255,255,0.2),rgba(0,0,0,0.7));
+  width: 80%;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+.get-section {
+  padding: auto;
+  width: 100%;
+}
+
+.get-title {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 24px;
+  font-family: 'Helvetica', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.mini-title {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-top: 16px;
+  text-align: center;
+}
+.get-words{
+  position: relative;
+}
+.get-words::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* Adjust the width of the line */
+  height: 2px; /* Adjust the height of the line */
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.Get-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.get-login-button1, .get-signin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.get-login-button1 {
+  background-color: #ffdf00;
+  color: black;
+}
+
+.get-login-button1:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.get-signin-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.get-signin-button:hover {
+  background-color: #ff0000;
+  color: black;
+}
+
+.get-login-button1 span, .get-signin-button span {
+  margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .get-title {
+    font-size: 2rem;
+  }
+  
+  .mini-title {
+    font-size: 1rem;
+  }
+
+  .get-login-button1, .get-signin-button {
+    width: 130px;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .inner-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .content-wrapper {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+
+@media (max-width: 576px) {
+  .get-title {
+    font-size: 1.8rem;
+  }
+
+  .mini-title {
+    font-size: 0.9rem;
+  }
+
+  .get-login-button1, .get-signin-button {
+    width: 120px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .inner-container {
+    height: 90vh;
+  }
+}

@@ -1,0 +1,138 @@
+.download-section {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.resource-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resource-description {
+  flex: 1 1 0;
+  padding: 20px;
+}
+
+.resource-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.resource-details {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(109, 99, 99, 0.8);
+  margin-bottom: 50px;
+}
+
+.resource-image-container {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.row-align {
+  padding-bottom: 30px;
+}
+
+.resource-image {
+  width: 500px;
+  height: 400px;
+  object-fit: cover; /* Ensures the images maintain aspect ratio */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.resource-image:hover {
+  transform: scale(1.05);
+}
+
+.home-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  background: linear-gradient(to bottom, rgba(71, 8, 245, 0.1), rgb(79, 3, 255));
+  font-family: 'Poppins', sans-serif;
+  width: 110px;
+}
+
+.home-button:hover {
+  background-color: rgba(7, 1, 90, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  /* For tablets and medium-sized devices */
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .resource-title {
+    font-size: 2rem;
+  }
+
+  .resource-image {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For mobile phones */
+  .resource-row {
+    flex-direction: column;
+  }
+
+  .resource-title {
+    font-size: 1.8rem;
+  }
+
+  .resource-details {
+    font-size: 1rem;
+  }
+
+  .resource-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* For smaller mobile phones */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .resource-title {
+    font-size: 1.5rem;
+  }
+
+  .resource-details {
+    font-size: 0.9rem;
+  }
+  .download-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+  }
+}

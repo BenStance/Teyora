@@ -1,0 +1,83 @@
+.messages-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for better visibility */
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .messages-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .no-messages {
+    text-align: center;
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .messages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .message-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .message-header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .message-subject {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .message-date {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .message-body {
+    font-size: 16px;
+  }
+  
+  .message-rating {
+    font-weight: bold;
+  }
+  .btn-delete {
+    background-color: #e74c3c; /* Red color for the delete button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  .message-item {
+    position: relative; /* Position relative for button alignment */
+    padding-bottom: 20px; /* Space for button */
+  }
+  
+  .message-item .btn-delete {
+    position: absolute; /* Position the button at the bottom */
+    bottom: 10px;
+    right: 10px; /* Align it to the right */
+  }
+  

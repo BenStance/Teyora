@@ -1,0 +1,66 @@
+.policy-section {
+    padding: 40px;
+    background-color: #f7f9fc;
+    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding-top: 80px;
+  }
+  
+  .policy-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .policy-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+  }
+  
+  .policy-header p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .policy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .policy-block {
+    margin-bottom: 30px;
+  }
+  
+  .policy-block h2 {
+    font-size: 1.75rem;
+    color: #2980b9;
+    margin-bottom: 15px;
+  }
+  
+  .policy-block p, .policy-block ul {
+    font-size: 1rem;
+    color: #34495e;
+  }
+  
+  .policy-block ul {
+    margin-left: 20px;
+  }
+  
+  .policy-block ul li {
+    list-style-type: disc;
+  }
+  
+  @media (max-width: 768px) {
+    .policy-header h1 {
+      font-size: 2rem;
+    }
+  
+    .policy-block h2 {
+      font-size: 1.5rem;
+    }
+  
+    .policy-content {
+      padding: 20px;
+    }
+  }
+  

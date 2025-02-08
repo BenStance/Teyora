@@ -1,0 +1,128 @@
+/* category.css */
+
+/* General page styling */
+.category-page {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.category-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.category-image img {
+  max-width: 100%;
+  width: 1000px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-description h2 {
+  font-size: 2rem;
+  color: #495057;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.category-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #6c757d;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .category-title {
+    font-size: 2rem;
+  }
+
+  .category-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .category-description h2 {
+    font-size: 1.5rem;
+  }
+
+  .category-description p {
+    font-size: 1rem;
+  }
+
+  .category-image {
+    margin-bottom: 30px;
+  }
+}
+
+/* Animations */
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Hover effects on images */
+.category-image img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.category-description h2:hover {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+/* Extra custom classes for alignment */
+.text-center {
+  text-align: center;
+}
+
+.align-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile-specific padding adjustments */
+@media (max-width: 576px) {
+  .category-page {
+    padding: 20px 10px;
+  }
+
+  .category-title {
+    font-size: 1.8rem;
+  }
+
+  .category-subtitle {
+    font-size: 1rem;
+  }
+
+  .category-description h2 {
+    font-size: 1.4rem;
+  }
+
+  .category-description p {
+    font-size: 0.95rem;
+  }
+}

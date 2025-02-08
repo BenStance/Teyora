@@ -1,0 +1,581 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css');
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-container {
+  background-color: rgb(66, 64, 64);
+  width: 100%;
+  height: 100vh;
+}
+
+/* Main container for the login section */
+.login-container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #1a202c;
+}
+
+/* Form input fields */
+.input-field {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.input-field:focus {
+  background-color: white;
+  border-color: #3182ce;
+  outline: none;
+}
+
+/* Primary button style */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3182ce;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #225a9f;
+}
+
+/* Secondary button style */
+.btn-secondary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+/* Google button style */
+.btn-google {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(248, 20, 20);
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-google:hover,
+.btn-google:focus {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+.btn-google2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 254, 254, 0.6);
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.btn-google2:hover {
+  background-color: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+  color: #3182ce;
+}
+
+a:hover,
+a:focus {
+  color: #225a9f;
+}
+
+/* Divider line */
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.text-gray-700 {
+  color: #374151;
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-footer .forgot-password,
+.login-footer .register-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-footer .forgot-password:hover,
+.login-footer .register-link:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 0 10px;
+  color: #bbb;
+}
+
+/* Background image styling */
+.backpic {
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.backpic-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+}
+
+.form-width {
+  width: 43%;
+}
+
+.carousel-image,
+.carousel-image2 {
+  height: 75vh;
+  object-fit: cover;
+}
+
+.backpic-content2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text2 {
+  color: #000;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapperbg {
+  background-image: url(../images/background2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wrapperbg2 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.text5 {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Styles */
+
+/* Small devices (up to 600px) */
+@media (max-width: 600px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .form-width {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .backpic,
+  .carousel-image,
+  .carousel-image2 {
+    height: 50vh;
+  }
+
+  .text {
+    font-size: 1.2em;
+  }
+
+  .text2 {
+    font-size: 1.2em;
+    padding: 8px 12px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-google,
+  .btn-google2 {
+    padding: 10px;
+  }
+
+  .mt-8,
+  .mt-12,
+  .mt-16 {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Medium devices (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .login-container {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .form-width {
+    width: 60%;
+  }
+
+  .backpic,
+  .carousel-image,
+  .carousel-image2 {
+    height: 60vh;
+  }
+
+  .text,
+  .text2 {
+    font-size: 1.3em;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-google,
+  .btn-google2 {
+    padding: 11px;
+  }
+
+  .mt-8,
+  .mt-12,
+  .mt-16 {
+    margin-top: 2.5rem;
+  }
+}
+
+/* Large devices (1025px and above) */
+@media (min-width: 1025px) {
+  .login-container {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .form-width {
+    width: 43%;
+  }
+
+  .backpic,
+  .carousel-image,
+  .carousel-image2 {
+    height: 75vh;
+  }
+
+  .text {
+    font-size: 1.5em;
+  }
+
+  .text2 {
+    font-size: 1.5em;
+    padding: 10px 16px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-google,
+  .btn-google2 {
+    padding: 12px;
+  }
+
+  .mt-8,
+  .mt-12,
+  .mt-16 {
+    margin-top: 4rem;
+  }
+}
+/* Forgot Password Page Styles */
+
+.forgot-password-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 252, 252, 0.5), rgba(0,0,0,0.4));
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.forgot-password-form {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.forgot-password-title {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 20px;
+}
+
+.forgot-password-input-container {
+  margin-top: 15px;
+}
+
+.forgot-password-input {
+  width: 100%;
+  padding: 12px 12px 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 252, 252, 0.6);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.forgot-password-input:focus {
+  background-color: white;
+  border-color: #3182ce;
+  outline: none;
+}
+
+.forgot-password-btn-primary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3182ce;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.forgot-password-btn-primary:hover,
+.forgot-password-btn-primary:focus {
+  background-color: #225a9f;
+}
+
+/* Error and Success Messages */
+.forgot-password-error,
+.forgot-password-success {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.forgot-password-error {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+}
+
+.forgot-password-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+}
+
+/* Countdown Timer */
+.forgot-password-timer {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #6b7280;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .forgot-password-form {
+    padding: 20px;
+  }
+  
+  .forgot-password-title {
+    font-size: 1.5em;
+  }
+
+  .forgot-password-btn-primary {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .forgot-password-input {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+/* Styles for the Google Login Email and OTP Forms */
+
+/* Container for error and success messages */
+.text-red-500 {
+  color: #e3342f; /* Red for error messages */
+  font-size: 0.9em;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.text-green-500 {
+  color: #38a169; /* Green for success messages */
+  font-size: 0.9em;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Timer text for OTP countdown */
+.text-gray-500 {
+  color: #718096; /* Light gray for timer */
+  font-size: 0.9em;
+}
+
+/* Input Field for Email and OTP */
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.input-field:focus {
+  background-color: white;
+  border-color: #3182ce;
+  outline: none;
+}
+
+/* Primary button style for OTP submission and email submission */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3182ce;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #225a9f;
+}
